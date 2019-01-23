@@ -1,9 +1,10 @@
 # Glyph Custom Repo
 
 Author: Glyph
+
 Initial Date of Creation: 23/01/2018
 
-This repo contains various projects used day to day.
+This repo contains various projects.
 
 Predominately Python based projects.
 
