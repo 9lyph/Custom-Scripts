@@ -10,6 +10,7 @@ This repo contains various projects.
   Usage: SimpleServer.py \<host\> \<port\>
 2. SimpleClient.py - This is a very simple TCP client, which can be used to connect using a specified Host and Port. 
   Usage: SimpleClient.py \<host\> \<port\>
-3. nmap2excel.py - The idea behind this concept is to take the output of a Greppable NMAP scan, filter on OPEN ports per IP/Node,
+3. nmap2excel/nmap2excel.py - The idea behind this concept is to take the output of a Greppable NMAP scan, filter on OPEN ports per IP/Node,
 and populate an excel spreadsheet with the findings.  Incorporating Styles Headings and Sheets where required.
   Usage: nmap2excel.py -i file -o file -t [outputs input file contents to terminal]
+  a. nmap2excel.exe - PE for 64 bit windows
