@@ -16,7 +16,7 @@ def banner():
 	print ("| Creation Date: 19/02/2019                                                                  |")
 	print ("| Version Control: 1.0					                                                     |") 
 	print ("| Description: Couples with Client2Shell.py to produce a reverse shell using Native Python.  |")
-	print ("| Usage: " + sys.argv[0][-13:] + " -t <bind address> -p <bind port> 						 |")
+	print ("| Usage: " + sys.argv[0][-15:] + " -t <bind address> -p <bind port> 						 |")
 	print ("+--------------------------------------------------------------------------------------------+")
 
 # Setting Usage Function

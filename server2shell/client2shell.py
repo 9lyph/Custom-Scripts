@@ -17,7 +17,7 @@ def banner():
 	print ("| Creation Date: 19/02/2019                                                                  |")
 	print ("| Version Control: 1.0					                                                     |") 
 	print ("| Description: Couples with Server2Shell.py to produce a reverse shell using Native Python.  |")
-	print ("| Usage: " + sys.argv[0][-13:] + " -t <target host> -p <target port> 						 |")
+	print ("| Usage: " + sys.argv[0][-15:] + " -t <target host> -p <target port> 						 |")
 	print ("+--------------------------------------------------------------------------------------------+")
 
 
