@@ -5,6 +5,7 @@ This repo contains various scripts including:
 - NMAP to excel converter (GNMAP to XLS).  Currently supports GNMAP format. Takes the output of a Greppable NMAP scan results, filtered on                OPEN ports per IP/Node, and then populates an excel spreadsheet with the findings.  Incorporating Styles Headings and Sheets where required.
 - Native Server/Client Python Reverse Shell Implementation
 - A simple TCP Server and associated TCP Client.
+- IP Address To Binary Notation Converter.
 
 ### Installation - nmap2excel.py/nmap2excel.exe
 
@@ -57,3 +58,12 @@ Clone this repository and run as required and as per usage below.
     client2shell.py -t <target host> -p <target port>
     <target address> - server IP address to connect to
     <target port> - server port to connect to
+    
+### Installation - ip2binary.py
+
+Clone this repository and run as required and as per usage below.
+
+### Usage
+
+    ip2binary.py <ip_address to be converted>
+    <ip_address to be converted> - Requires a valid IP address in dot notation e.g. 1.1.1.1
