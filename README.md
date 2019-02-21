@@ -66,4 +66,5 @@ Clone this repository and run as required and as per usage below.
 ### Usage
 
     ip2binary.py <ip_address to be converted>
+    ip2binary.exe <ip_address to be converted>
     <ip_address to be converted> - Requires a valid IP address in dot notation e.g. 1.1.1.1
