@@ -59,7 +59,7 @@ Clone this repository and run as required and as per usage below.
     <target address> - server IP address to connect to
     <target port> - server port to connect to
     
-### Installation - ip2binary.py
+### Installation - ip2binary.py/ip2binary.exe
 
 Clone this repository and run as required and as per usage below.
 
