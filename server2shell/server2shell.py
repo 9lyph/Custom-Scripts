@@ -89,6 +89,8 @@ def main(argv):
 		usage()
 	except ValueError:
 		usage()
+	except AttributeError:
+		usage()
 	else:
 		sys.exit()
 	
