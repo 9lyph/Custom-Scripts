@@ -6,6 +6,7 @@ This repo contains various scripts including:
 - Native Server/Client Python Reverse Shell Implementation
 - A simple TCP Server and associated TCP Client.
 - IP Address To Binary Notation Converter.
+- Host list to Port Status.  Allows input list of host(s) and conducts a scan for given open ports.
 
 ### Installation - nmap2excel.py/nmap2excel.exe
 
@@ -68,3 +69,18 @@ Clone this repository and run as required and as per usage below.
     ip2binary.py <ip_address to be converted>
     ip2binary.exe <ip_address to be converted>
     <ip_address to be converted> - Requires a valid IP address in dot notation e.g. 1.1.1.1
+
+### Installation - host2port.py
+
+Clone this repository and run as required and as per usage below.
+
+### Usage
+
+    host2port.py -i <host file> -p <port(s)>
+    <host file> - list of hosts (can be based on an output from sublist3r for instance)
+    <port(s)> - comma separated ports to scan against
+
+### Example
+
+    host2port.py -i 10.10.10.10 -p 21,22,80
+    
