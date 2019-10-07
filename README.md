@@ -84,3 +84,14 @@ Clone this repository and run as required and as per usage below.
 
     host2port.py -i 10.10.10.10 -p 21,22,80
     
+### Installation - port2scan.py
+
+Clone this repository and run as required and as per usage below.
+
+### Usage
+
+    port2scan.py <host> [<ports seperated by spaces>]
+
+### Example
+
+    port2scan.py www.google.com 21 22 80

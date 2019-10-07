@@ -22,4 +22,8 @@ def main():
     tcpScan(ports[2:])
 
 if __name__=='__main__':
-    main()
+    if len(sys.argv) < 3:
+        print ("\nUsage: %s <host> <[ports seperated by spaces]>") %(sys.argv[0])
+        print ("Example: %s 192.168.1.1 80 443") %(sys.argv[0])
+    else:
+        main()
