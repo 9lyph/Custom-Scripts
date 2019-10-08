@@ -32,10 +32,8 @@ def tcpScan(ports):
         ans,unans = sr(p, verbose=False, timeout=3)
         if ans:
             print ("%s\t\topen ") % port
-#            print ("[+] Port: %s reachable") % port
         else:
             pass
-#            print ("[-] Port: %s unreachable") % port
 
 def main():
     ports = []
