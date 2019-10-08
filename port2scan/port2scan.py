@@ -2,18 +2,23 @@ from scapy.all import *
 import sys
 import os
 
+opened = []
+
 def tcpScan(ports):
     print ("+======================" + "="*len(sys.argv[1]) + "+")
     print ("| TCP Scanning %s ") % sys.argv[1]
-    print ("+======================" + "="*len(sys.argv[1]) + "+")
+    print ("+======================" + "="*len(sys.argv[1]) + "+\n")
+    print ("PORT(tcp)\tSTATE")
+    print ("---------\t-----")
     for port in ports:
         p = IP(dst=sys.argv[1])/TCP(dport=int(port))
         ans,unans = sr(p, verbose=False, timeout=3)
         if ans:
-            print ("[+] Port: %s reachable") % port
+            print ("%s\t\topen ") % port
+#            print ("[+] Port: %s reachable") % port
         else:
-            print ("[-] Port: %s unreachable") % port
-
+            pass
+#            print ("[-] Port: %s unreachable") % port
 
 def main():
     ports = []
