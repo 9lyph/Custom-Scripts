@@ -31,10 +31,7 @@ def tcpScan(ports):
     for port in ports:
         p = IP(dst=sys.argv[1])/TCP(dport=int(port))
         ans,unans = sr(p, verbose=False, timeout=3)
-        if ans:
-            print ("%s\t\topen ") % port
-        else:
-            pass
+        ans.summary(lfilter = lambda (s,r): r.sprintf("%TCP.flags%") == "SA",prn=lambda(s,r):r.sprintf("%TCP.sport%\t\topen"))
 
 def main():
     ports = []
