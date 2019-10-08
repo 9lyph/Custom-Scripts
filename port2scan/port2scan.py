@@ -18,7 +18,8 @@ def banner():
 	print ("| Creation Date: 08/10/2019                                                                                        |")
 	print ("| Version Control: 1.0                                                                                             |") 
 	print ("| Description: Quick and dirty Active TCP Scanner.                                                                 |")
-	print ("| Usage: " + sys.argv[0] + " <host> [<ports seperated by spaces>]\t\t                                                 |")
+	print ("| Usage: " + sys.argv[0] + " <host> [<ports seperated by spaces>]\t\t                                              |")
+        print ("| Example: " + sys.argv[0] + " 192.168.1.1 80 443                                                               |")
 	print ("+------------------------------------------------------------------------------------------------------------------+")
 
 def tcpScan(ports):
