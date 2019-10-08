@@ -7,6 +7,7 @@ This repo contains various scripts including:
 - A simple TCP Server and associated TCP Client.
 - IP Address To Binary Notation Converter.
 - Host list to Port Status.  Allows input list of host(s) and conducts a scan for given open ports.
+- Quick and dirty TCP Active Port Scanner
 
 ### Installation - nmap2excel.py/nmap2excel.exe
 
