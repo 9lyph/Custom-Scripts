@@ -23,15 +23,19 @@ def banner():
 	print ("+------------------------------------------------------------------------------------------------------------------+")
 
 def tcpScan(ports):
-    print ("\n+======================" + "="*len(sys.argv[1]) + "+")
-    print ("| TCP Scanning %s ") % sys.argv[1]
-    print ("+======================" + "="*len(sys.argv[1]) + "+\n")
-    print ("PORT(tcp)\tSTATE")
-    print ("---------\t-----")
-    for port in ports:
-        p = IP(dst=sys.argv[1])/TCP(dport=int(port))
-        ans,unans = sr(p, verbose=False, timeout=3)
-        ans.summary(lfilter = lambda (s,r): r.sprintf("%TCP.flags%") == "SA",prn=lambda(s,r):r.sprintf("%TCP.sport%\t\topen"))
+    print ("Scanning: %s") % sys.argv[1]
+    try:
+        for port in ports:
+            p = sr1(IP(dst=sys.argv[1])/TCP(sport=RandShort(),dport=int(port),flags="S"),verbose=False, timeout=3)
+            try:
+                if p.getlayer(TCP).flags == "SA":
+                    print ("[+] %s Open") % port
+                elif p.getlayer(TCP).flags == "R":
+                    print ("[+] %s Filtered") % port
+            except AttributeError:
+                print ("[+] %s Closed") % port
+    except socket.gaierror:
+        pass
 
 def main():
     ports = []
@@ -46,3 +50,4 @@ if __name__=='__main__':
     else:
         banner()
         main()
+
