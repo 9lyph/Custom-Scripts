@@ -8,6 +8,7 @@ This repo contains various scripts including:
 - IP Address To Binary Notation Converter.
 - Host list to Port Status.  Allows input list of host(s) and conducts a scan for given open ports.
 - Quick and dirty TCP Active Port Scanner
+- Urlscraper. Simple Scraper to listout all HREF's within a choosen domain.
 
 ### Installation - nmap2excel.py/nmap2excel.exe
 
@@ -96,3 +97,16 @@ Clone this repository and run as required and as per usage below.
 ### Example
 
     port2scan.py www.google.com 21 22 80
+
+### Installation - url2scraper.py
+
+Clone this repository and run as required and as per usage below.
+
+### Usage
+
+    url2scraper.py -i <host file> -o <output file> -t <pipes output to terminal>
+    NOTE: -o and -t: Optional
+
+### Example
+
+    url2scraper.py -i hosts.txt -o somefile.txt -t
