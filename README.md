@@ -9,6 +9,7 @@ This repo contains various scripts including:
 - Host list to Port Status.  Allows input list of host(s) and conducts a scan for given open ports.
 - Quick and dirty TCP Active Port Scanner
 - Urlscraper. Simple Scraper to listout all HREF's within a choosen domain.
+- FTP Brute Forcer. Simple FTP brute force util.
 
 ### Installation - nmap2excel.py/nmap2excel.exe
 
@@ -110,3 +111,18 @@ Clone this repository and run as required and as per usage below.
 ### Example
 
     url2scraper.py -i hosts.txt -o somefile.txt -t
+
+### Installation - ftp2brute.py
+
+Clone this repository and run as required.
+
+pip install -r requirements.txt
+
+### Usage
+
+    ftp2brute.py <host> <user> <wordlist>
+    Default port in use 'tcp/21'
+
+### Example
+    
+    ftp2brute.py 192.168.1.1 root wordlist.txt
