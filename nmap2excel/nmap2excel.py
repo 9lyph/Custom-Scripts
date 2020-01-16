@@ -96,7 +96,7 @@ def writeExcel():
 
 	#Declaring Workbook and Worksheet objects
 	wb = xlwt.Workbook()
-	ws = wb.add_sheet('PCI Test Results')
+	ws = wb.add_sheet('Results', cell_overwrite_ok=True)
 
 	#Writing default headers and Sheet Title
 	ws.write(0, 0, 'Host', style0)
