@@ -35,3 +35,4 @@ if __name__ == "__main__":
         Main(str(sys.argv[1]))
     else:
         Usage()
+        sys.exit()
