@@ -10,6 +10,7 @@ This repo contains various scripts including:
 - Quick and dirty TCP Active Port Scanner
 - Urlscraper. Simple Scraper to listout all HREF's within a choosen domain.
 - FTP Brute Forcer. Simple FTP brute force util.
+- ASCII String to Hex converter.
 
 ### Installation - nmap2excel.py/nmap2excel.exe
 
@@ -126,3 +127,15 @@ pip install -r requirements.txt
 ### Example
     
     ftp2brute.py 192.168.1.1 root wordlist.txt
+
+### Installation - ascii2hex.py
+
+Clone this repository and run as required.
+
+### Usage
+
+    ascii2hex.py '<string>'
+
+### Example
+    
+    ascii2hex.py "Glyph"
