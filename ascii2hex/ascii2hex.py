@@ -9,12 +9,6 @@ parser.add_argument('-x', '--hex', action='store', dest='x', help='Hex that you 
 parser.add_argument('-a',  '--ascii', action='store', dest='a', help='Ascii that you would like to convert to hex', default='')
 args = parser.parse_args()
 
-# def getArgument(args):
-#     switch = {
-#         'a':asciiPrint(args.a),
-#         'x':hexPrint(args.x)
-#     }
-
 def Banner():
     os.system('clear')
     print ("+==================================================================================================================================================")
