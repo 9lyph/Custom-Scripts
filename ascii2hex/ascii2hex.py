@@ -15,9 +15,10 @@ def Banner():
     print ("+==================================================================================================================================================")
     print ("|")
     print ("| Title: %s" % sys.argv[0])
-    print ("| Author: Glyph")
+    print ("| Author: ⅁lyph")
+    print ("| Creation Date: 21/02/2020")
     print (f"| Usage: {sys.argv[0]} '-x' \'<hex to convert to ascii>\' OR {sys.argv[0]} -a' \'<ascii to convert to hex>\'")
-    print ("| Summary: Converts either an input ascii string to hexadecimal OR hexadecimal string to ascii")
+    print ("| Description: This takes either a ASCII string or HEX Value set, with the opposite result as output.")
     print ("|")
     print ("+==================================================================================================================================================")
 
