@@ -15,13 +15,13 @@ def Banner():
     print ("|")
     print ("| Title: %s" % sys.argv[0])
     print ("| Author: Glyph")
-    print ("| Usage: %s \'<string>\' \'-x\' <hex to convert to ascii> OR %s \'<string>\' \'-a\' <ascii to convert to hex>") % (sys.argv[0], sys.argv[0])
+    print ("| Usage: %s '-x' \'<hex to convert to ascii>\' OR %s -a' \'<ascii to convert to hex>\'") % (sys.argv[0], sys.argv[0])
     print ("| Summary: Converts either an input ascii string to hexadecimal OR hexadecimal string to ascii")
     print ("|")
     print ("+==================================================================================================================================================")
 
 def Usage():
-    print ("Usage: %s \'<string>\' '-x' <hex to convert to ascii> OR %s \'<string>\' -a' <ascii to convert to hex>") % (sys.argv[0], sys.argv[0] )
+    print ("Usage: %s '-x' \'<hex to convert to ascii>\' OR %s -a' \'<ascii to convert to hex>\'") % (sys.argv[0], sys.argv[0])
 
 def asciiPrint(string):
     hexarray = []
