@@ -15,24 +15,25 @@ def Banner():
     print ("|")
     print ("| Title: %s" % sys.argv[0])
     print ("| Author: Glyph")
-    print ("| Usage: %s '-x' \'<hex to convert to ascii>\' OR %s -a' \'<ascii to convert to hex>\'") % (sys.argv[0], sys.argv[0])
+    print (f"| Usage: {sys.argv[0]} '-x' \'<hex to convert to ascii>\' OR {sys.argv[0]} -a' \'<ascii to convert to hex>\'")
     print ("| Summary: Converts either an input ascii string to hexadecimal OR hexadecimal string to ascii")
     print ("|")
     print ("+==================================================================================================================================================")
 
 def Usage():
-    print ("Usage: %s '-x' \'<hex to convert to ascii>\' OR %s -a' \'<ascii to convert to hex>\'") % (sys.argv[0], sys.argv[0])
+    print (f"Usage: {sys.argv[0]} '-x' \'<hex to convert to ascii>\' OR {sys.argv[0]} -a' \'<ascii to convert to hex>\'")
 
 def asciiPrint(string):
     hexarray = []
     print ("[Original String]\n\n\'%s\'" % string)
     for char in string:
-        y = str(binascii.hexlify(char))
+        y = binascii.hexlify(bytearray(char, 'utf-8'))
         hexarray.append(y)
 
-    print ("\n[Hex Conversion]\n")   
+    print ("\n[Hex Conversion]\n") 
     for i in hexarray:
-        print("\\x%s" %i),
+        print ("\\x" + i.decode('utf-8'), end='')
+    print ("\n")
 
 def hexPrint(string):
     split = string.split("\\x")
@@ -41,12 +42,14 @@ def hexPrint(string):
         if char == '':
             pass
         else:
-            y = str(binascii.unhexlify(char.strip()))
+            y = binascii.unhexlify(char)
             hexarray.append(y)
 
     print ("[Original Hex]\n\n\'%s\'" % string)
     print ("\n[Ascii Conversion]\n")
-    print ("\'" + ''.join(hexarray) + "\'")
+    for i in hexarray:
+        print (i.decode('utf-8'), end='')
+    print ("\n")
 
 if __name__ == "__main__":
     Banner()
