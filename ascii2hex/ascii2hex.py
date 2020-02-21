@@ -52,7 +52,7 @@ def hexPrint(string):
 
     print ("[Original Hex]\n\n\'%s\'" % string)
     print ("\n[Ascii Conversion]\n")
-    print (''.join(hexarray))
+    print ("\'" + ''.join(hexarray) + "\'")
 
 if __name__ == "__main__":
     Banner()
