@@ -1,5 +1,6 @@
 import binascii
 import sys
+from sys import stdout
 import os
 import argparse
 
@@ -40,23 +41,18 @@ def asciiPrint(string):
         print("\\x%s" %i),
 
 def hexPrint(string):
-    joined = string.replace(" ", "")
-    split = joined.split("\\x")
-    print split
-    # for char in string:
-    #     print char,
-    # joined = hex(string.replace(" ", ""))
+    split = string.split("\\x")
+    hexarray = []
+    for char in split:
+        if char == '':
+            pass
+        else:
+            y = str(binascii.unhexlify(char.strip()))
+            hexarray.append(y)
 
-    # hexarray = []
-    # print ("[+] Original String:\n%s\n" % string)
-    # for char in string:
-    #     y = str(binascii.hexlify(char))
-    #     hexarray.append(y)
-
-    # print ("[+] Hexed:")
-    # for i in hexarray:
-    #     print("\\x%s" %i),
-    # print ("\n")
+    print ("[Original Hex]\n\n\'%s\'" % string)
+    print ("\n[Ascii Conversion]\n")
+    print (''.join(hexarray))
 
 if __name__ == "__main__":
     Banner()
