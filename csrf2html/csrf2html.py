@@ -46,7 +46,13 @@ def Main():
             post = True
         elif ("GET" in str(data[i])):
             method = str(data[i])[:3].strip()
-            route = str(data[i])[4:-10].strip()
+            route = str(data[i])[4:].partition("?")[0].strip()
+            if ("=" in str(data[i])):
+                get_data = str(data[i].partition("?")[2].strip())
+                params = get_data.split("&")
+                for param in params:
+                    stuff = (param.split("="))
+                    inputType += (f"   <input type=\"hidden\" " + "name=\""+stuff[0]+ "\"" + " value=\"" + stuff[1]+ "\" " + "/>" + "\r\n ")
         elif ("Host" in str(data[i])):
             host = str(data[i])[6:].strip()
         elif ("User-Agent" in str(data[i])):
