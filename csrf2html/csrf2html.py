@@ -35,11 +35,15 @@ def Main():
     global body
     global stuff
     global inputType
-
+    inputType = ""
+    global post
+    post = False
+   
     for i in range(len(data)):
         if ("POST" in str(data[i])):
             method = str(data[i])[:4].strip()
             route = str(data[i])[5:-10].strip()
+            post = True
         elif ("GET" in str(data[i])):
             method = str(data[i])[:3].strip()
             route = str(data[i])[4:-10].strip()
@@ -63,10 +67,9 @@ def Main():
             pass
         elif ("Connection: close" in str(data[i])):
             pass
-        elif ("=" in str(data[i])):
+        elif ("=" in str(data[i])) and (post == True):
             body = str(data[i]).strip()
-            params = body.split("&")
-            inputType = ""
+            params = body.split("&") 
             for param in params:
                 stuff = (param.split("="))
                 inputType += (f"   <input type=\"hidden\" " + "name=\""+stuff[0]+ "\"" + " value=\"" + stuff[1]+ "\" " + "/>" + "\r\n ")
