@@ -78,7 +78,6 @@ def writeFile():
         make_html += ("<body>" + "\r\n ")
         make_html += ("Hacked!" + "\r\n ")
         make_html += ("  <form action=\"https://" + host + route + "\" " + "method=\"" + method + "\"" + ">" + "\r\n ")
-        # make_html += ("   <input type=\"hidden\" " + "name=\"\" " + "value=\"\"" + "/>" + "\r\n ")
         make_html += inputType
         make_html += ("  </form>" + "\r\n ")
         make_html += ("   <script>" + "\r\n ")
