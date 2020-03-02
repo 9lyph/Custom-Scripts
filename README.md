@@ -11,7 +11,7 @@ This repo contains various scripts including:
 - Urlscraper. Simple Scraper to listout all HREF's within a choosen domain.
 - FTP Brute Forcer. Simple FTP brute force util.
 - ASCII String to Hex converter.
-- CSRF POC to HTML writer.  This allows input of a POC HTTP GET/POST request as input with the resulting output being a POC HTML payload.
+- CSRF POC to HTML generator.  This allows input of a POC HTTP GET/POST request as input with the resulting output being a POC HTML payload.
 
 ### Installation - nmap2excel.py/nmap2excel.exe
 
