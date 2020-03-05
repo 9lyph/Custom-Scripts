@@ -1,15 +1,15 @@
 This repo contains various scripts including:
 
 - **nmap2excel.py** - NMAP to excel converter (GNMAP to XLS).  Currently supports GNMAP format. Takes the output of a Greppable NMAP scan results, filtered on                OPEN ports per IP/Node, and then populates an excel spreadsheet with the findings.  Incorporating Styles Headings and Sheets where required.
-- Native Server/Client Python Reverse Shell Implementation
-- A simple TCP Server and associated TCP Client.
-- IP Address To Binary Notation Converter.
-- Host list to Port Status.  Allows input list of host(s) and conducts a scan for given open ports.
-- Quick and dirty TCP Active Port Scanner
-- Urlscraper. Simple Scraper to listout all HREF's within a choosen domain.
-- FTP Brute Forcer. Simple FTP brute force util.
-- ASCII String to Hex converter.
-- CSRF POC to HTML generator.  This allows input of a POC HTTP GET/POST request as input with the resulting output being a POC HTML payload.
+- **SimpleServer.py/SimpleClient.py** - simple TCP Server and associated TCP Client.
+- **server2shell.py/client2shell.py** - Native Server/Client Python Reverse Shell Implementation
+- **ip2binary.py** - IP Address To Binary Notation Converter.
+- **host2port.py** - Host list to Port Status.  Allows input list of host(s) and conducts a scan for given open ports.
+- **port2scan.py** - Quick and dirty TCP Active Port Scanner
+- **url2scraper.py** - Urlscraper. Simple Scraper to listout all HREF's within a choosen domain.
+- **ftp2brute.py** - FTP Brute Forcer. Simple FTP brute force util.
+- **ascii2hex.py** - ASCII String to Hex converter.
+- **csrf2html.py** - CSRF POC to HTML generator.  This allows input of a POC HTTP GET/POST request as input with the resulting output being a POC HTML payload.
 
 ### Installation - nmap2excel.py
 
