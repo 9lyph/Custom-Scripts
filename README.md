@@ -1,4 +1,4 @@
-![](images/glyph.jpg | width=100)
+![alt text](images/glyph.jpg | width=100)
 
 This repo contains various scripts including:
 
