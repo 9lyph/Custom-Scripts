@@ -84,7 +84,7 @@ Download available at the following location: [host2port](https://github.com/9ly
 
 ### Example
 
-    host2port.py -i 10.10.10.10 -p 21,22,80
+    host2port.py -i hosts.txt -p 21,22,80
     
 ### Installation - port2scan.py
 
