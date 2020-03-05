@@ -9,7 +9,7 @@ This repo contains various scripts including:
 - **url2scraper.py** - urlscraper. Simple scraper to listout all HREF's within a choosen domain.
 - **ftp2brute.py** - ftp brute forcer. Simple ftp brute force utility.
 - **ascii2hex.py** - ascii string to hex converter.
-- **csrf2html.py** - csrf poc to html generator.  This allows input of a poc http GET/POST request as input with the resulting output being a poc html payload.
+- **csrf2html.py** - csrf to html generator.  This allows input of a poc http GET/POST request as input with the resulting output being a poc html payload.
 
 ### Installation - nmap2excel.py
 
