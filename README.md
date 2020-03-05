@@ -1,5 +1,3 @@
-# ⅁lyph's Custom Scripts
-
 This repo contains various scripts including:
 
 - NMAP to excel converter (GNMAP to XLS).  Currently supports GNMAP format. Takes the output of a Greppable NMAP scan results, filtered on                OPEN ports per IP/Node, and then populates an excel spreadsheet with the findings.  Incorporating Styles Headings and Sheets where required.
