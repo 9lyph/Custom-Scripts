@@ -24,7 +24,7 @@ Download available at the following location: [nmap2excel](https://github.com/9l
 
 ### Installation - SimpleServer.py
 
-Download available at the following location: [SimpleServer](https://github.com/9lyph/Custom-Scripts/blob/master/Simple%20Python%20Sever-Client/SimpleServer.py)
+Download available at the following location: [SimpleServer](https://github.com/9lyph/Custom-Scripts/tree/master/Simple%20Python%20Server%20Client/SimpleServer.py)
 
 ### Usage
 
@@ -34,7 +34,7 @@ Download available at the following location: [SimpleServer](https://github.com/
 
 ### Installation - SimpleClient.py 
 
-Download available at the following location: [SimpleClient](https://github.com/9lyph/Custom-Scripts/blob/master/Simple%20Python%20Sever-Client/SimpleClient.py)
+Download available at the following location: [SimpleClient](https://github.com/9lyph/Custom-Scripts/tree/master/Simple%20Python%20Server%20Client/SimpleClient.py)
     
 ### Usage
 
