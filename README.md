@@ -8,7 +8,6 @@
 - **SimpleServer.py/SimpleClient.py** - simple TCP Server and associated TCP Client.
 - **server2shell.py/client2shell.py** - native server/client python reverse shell implementation
 - **ip2binary.py** - ip address to binary notation converter.
-- **host2port.py** - host list to port status.  Allows input list of host(s) and conducts a scan for given open ports.
 - **port2scan.py** - quick and dirty tcp active port scanner
 - **url2scraper.py** - urlscraper. Simple scraper to listout all HREF's within a choosen domain.
 - **ftp2brute.py** - ftp brute forcer. Simple ftp brute force utility.
@@ -75,20 +74,6 @@ Download available at the following location: [ip2binary](https://github.com/9ly
     ip2binary.py <ip_address to be converted>
     ip2binary.exe <ip_address to be converted>
     <ip_address to be converted> - Requires a valid IP address in dot notation e.g. 1.1.1.1
-
-### Installation - host2port.py
-
-Download available at the following location: [host2port](https://github.com/9lyph/Custom-Scripts/blob/master/host2port/host2port.py)
-
-### Usage
-
-    host2port.py -i <host file> -p <port(s)>
-    <host file> - list of hosts (can be based on an output from sublist3r for instance)
-    <port(s)> - comma separated ports to scan against
-
-### Example
-
-    host2port.py -i hosts.txt -p 21,22,80
     
 ### Installation - port2scan.py
 
