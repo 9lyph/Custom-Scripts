@@ -1,7 +1,8 @@
 theme: jekyll-theme-slate
 title: ⅁lyph Custom Scripts
 description: Random scripts that may be useful
-avatar: "/img/avatar-icon.png"
+avatar: "/images/glyph.jpg"
+logo: /images/logo.png
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
