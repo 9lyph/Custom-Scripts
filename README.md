@@ -132,11 +132,11 @@ Download available at the following location: [ascii2hex](https://github.com/9ly
 
 ### Usage
 
-    ascii2hex.py '<string>'
+    ascii2hex.py -x '<string>'
 
 ### Example
     
-    ascii2hex.py "Glyph"
+    ascii2hex.py -a "Glyph"
     
 ### Installation - csrf2html.py
 
