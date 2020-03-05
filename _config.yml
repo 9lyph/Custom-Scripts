@@ -1,6 +1,7 @@
 theme: jekyll-theme-slate
 title: ⅁lyph Custom Scripts
 description: Random scripts that may be useful
+url: "https://9lyph.github.io/Custom-Scripts/"
 avatar: "/images/glyph.jpg"
 logo: /images/glyph.jpg
 plugins:
