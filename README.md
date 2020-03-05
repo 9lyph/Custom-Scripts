@@ -1,4 +1,6 @@
-<img src="images/glyph.jpg" align="center" width="250" border="1"/>
+<p align="center">
+<img src="images/glyph.jpg" width="250" border="1"/>
+</p>
 
 This repo contains various scripts including:
 
