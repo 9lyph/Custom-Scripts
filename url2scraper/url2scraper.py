@@ -36,11 +36,11 @@ def banner():
 
 def usage():
     print ("Usage: " + sys.argv[0] + " -i <host file> -o <output file> -t")
-    print ("Example: %s -i host.txt -o output.txt -t") %sys.argv[0]
+    print (f"Example: {sys.argv[0]} -i host.txt -o output.txt -t")
 
 def main(input_file, output_file, terminal):
     with open (input_file, 'r') as f:
-        print "[+] Scraping Websites for embedded HTTP References"
+        print ("[+] Scraping Websites for embedded HTTP References")
         for line in f.readlines():
             url = line.strip()
             try:
@@ -48,15 +48,15 @@ def main(input_file, output_file, terminal):
                 if r.status_code == 301 or r.status_code == 302:
                     r = requests.get("https://"+url, timeout=1)
                     if r.status_code == 200:
-                        print ("[+] Host: %s") %(url)
-                        print ("[+] Looking for embedded URL references on %s") %(url)
+                        print (f"[+] Host: {url}")
+                        print (f"[+] Looking for embedded URL references on {url}")
                         hrefs = re.findall ('https?://(?:[-\w.]|(?:%[\da-fA-F]{2}))+', r.text)
                         sorted_hrefs = set(hrefs)
                         if terminal == True:
                             print ("[+] Writing to terminal")
                             terminal = False
                             for href in sorted_hrefs:
-                                print href
+                                print (href)
                         else:
                             with open (output_file, 'a') as output:
                                 print ("[+] Writing results to file %s") %(sys.argv[4])
@@ -71,7 +71,7 @@ def main(input_file, output_file, terminal):
                         print ("[+] Writing to terminal")
                         terminal = False
                         for href in sorted_hrefs:
-                            print href
+                            print (href)
                     else:
                         with open (output_file, 'a') as output:
                             print ("[+] Writing results to file %s") %(sys.argv[4])
