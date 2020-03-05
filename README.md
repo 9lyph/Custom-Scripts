@@ -13,9 +13,11 @@ This repo contains various scripts including:
 - ASCII String to Hex converter.
 - CSRF POC to HTML generator.  This allows input of a POC HTTP GET/POST request as input with the resulting output being a POC HTML payload.
 
-### Installation - nmap2excel.py/nmap2excel.exe
+### Installation - nmap2excel.py
 
 Clone this repository and run as required and as per usage below.
+
+[nmap2excel](https://github.com/9lyph/Custom-Scripts/blob/master/nmap2excel/nmap2excel.py)
 
 ### Usage
 
