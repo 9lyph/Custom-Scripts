@@ -15,9 +15,7 @@ This repo contains various scripts including:
 
 ### Installation - nmap2excel.py
 
-Clone this repository and run as required and as per usage below.
-
-[nmap2excel](https://github.com/9lyph/Custom-Scripts/blob/master/nmap2excel/nmap2excel.py)
+Download available at the following location: [nmap2excel](https://github.com/9lyph/Custom-Scripts/blob/master/nmap2excel/nmap2excel.py)
 
 ### Usage
 
@@ -29,7 +27,7 @@ Clone this repository and run as required and as per usage below.
 
 ### Installation - SimpleServer.py
 
-Clone this repository and run as required and as per usage below.
+Download available at the following location: [SimpleServer](https://github.com/9lyph/Custom-Scripts/blob/master/Simple%20Python%20Sever-Client/SimpleServer.py)
 
 ### Usage
 
@@ -39,7 +37,7 @@ Clone this repository and run as required and as per usage below.
 
 ### Installation - SimpleClient.py 
 
-Clone this repository and run as required and as per usage below.
+Download available at the following location: [SimpleClient](https://github.com/9lyph/Custom-Scripts/blob/master/Simple%20Python%20Sever-Client/SimpleClient.py)
     
 ### Usage
 
@@ -49,7 +47,7 @@ Clone this repository and run as required and as per usage below.
    
 ### Installation - server2shell.py
 
-Clone this repository and run as required and as per usage below.
+Download available at the following location: [Server2Shell](https://github.com/9lyph/Custom-Scripts/blob/master/server2shell/server2shell.py)
 
 ### Usage
 
@@ -59,7 +57,7 @@ Clone this repository and run as required and as per usage below.
 
 ### Installation - client2shell.py
 
-Clone this repository and run as required and as per usage below.
+Download available at the following location: [Client2Shell](https://github.com/9lyph/Custom-Scripts/blob/master/server2shell/client2shell.py)
 
 ### Usage
 
@@ -67,9 +65,9 @@ Clone this repository and run as required and as per usage below.
     <target address> - server IP address to connect to
     <target port> - server port to connect to
     
-### Installation - ip2binary.py/ip2binary.exe
+### Installation - ip2binary.py
 
-Clone this repository and run as required and as per usage below.
+Download available at the following location: [ip2binary](https://github.com/9lyph/Custom-Scripts/blob/master/ip2binary/ip2binary.py)
 
 ### Usage
 
@@ -79,7 +77,7 @@ Clone this repository and run as required and as per usage below.
 
 ### Installation - host2port.py
 
-Clone this repository and run as required and as per usage below.
+Download available at the following location: [host2port](https://github.com/9lyph/Custom-Scripts/blob/master/host2port/host2port.py)
 
 ### Usage
 
@@ -93,7 +91,7 @@ Clone this repository and run as required and as per usage below.
     
 ### Installation - port2scan.py
 
-Clone this repository and run as required and as per usage below.
+Download available at the following location: [port2scan](https://github.com/9lyph/Custom-Scripts/blob/master/port2scan/port2scan.py)
 
 ### Usage
 
@@ -105,7 +103,7 @@ Clone this repository and run as required and as per usage below.
 
 ### Installation - url2scraper.py
 
-Clone this repository and run as required and as per usage below.
+Download available at the following location: [url2scraper](https://github.com/9lyph/Custom-Scripts/blob/master/url2scraper/url2scraper.py)
 
 ### Usage
 
@@ -118,7 +116,7 @@ Clone this repository and run as required and as per usage below.
 
 ### Installation - ftp2brute.py
 
-Clone this repository and run as required.
+Download available at the following location: [ftp2brute](https://github.com/9lyph/Custom-Scripts/blob/master/ftp2brute/ftp2brute.py)
 
 pip install -r requirements.txt
 
@@ -133,7 +131,7 @@ pip install -r requirements.txt
 
 ### Installation - ascii2hex.py
 
-Clone this repository and run as required.
+Download available at the following location: [ascii2hex](https://github.com/9lyph/Custom-Scripts/blob/master/ascii2hex/ascii2hex.py)
 
 ### Usage
 
@@ -145,7 +143,7 @@ Clone this repository and run as required.
     
 ### Installation - csrf2html.py
 
-Clone this repository and run as required.
+Download available at the following location: [csrf2html](https://github.com/9lyph/Custom-Scripts/blob/master/csrf2html/csrf2html.py)
 
 ### Usage
 
