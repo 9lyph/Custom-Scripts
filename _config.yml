@@ -1,9 +1,7 @@
 theme: jekyll-theme-slate
 title: ⅁lyph Custom Scripts
-description: Random scripts that may be useful
+description: Яandom thingZ that may be useful
 url: "https://9lyph.github.io/Custom-Scripts/"
-avatar: "https://github.com/9lyph/Custom-Scripts/blob/master/images/glyph.jpg"
-logo: "https://github.com/9lyph/Custom-Scripts/blob/master/images/glyph.jpg"
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
