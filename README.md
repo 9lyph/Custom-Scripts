@@ -1,3 +1,5 @@
+![alt text](images/glyph.jpg)
+
 This repo contains various scripts including:
 
 - **nmap2excel.py** - namp to excel converter (gnmap to .xls).  Currently supports **gnmap** format. Takes the output of a Greppable NMAP scan results, filtered on                OPEN ports per IP/Node, and then populates an excel spreadsheet with the findings.  Incorporating Styles Headings and Sheets where required.
