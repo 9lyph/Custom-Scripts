@@ -1,6 +1,4 @@
-![alt text](images/glyph.jpg | width=100)
-
-<img src="images/glyph.jpg" alt="Your image title" width="250"/>
+<img src="images/glyph.jpg" alt="" width="250"/>
 
 This repo contains various scripts including:
 
