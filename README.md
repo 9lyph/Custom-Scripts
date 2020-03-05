@@ -1,5 +1,5 @@
 <p align="center">
-<img src="images/glyph.jpg" alt="" width="250"/>
+<img src="images/glyph.jpg" alt="" width="250" border="1"/>
 </p>
 
 This repo contains various scripts including:
