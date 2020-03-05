@@ -1,6 +1,6 @@
 This repo contains various scripts including:
 
-- NMAP to excel converter (GNMAP to XLS).  Currently supports GNMAP format. Takes the output of a Greppable NMAP scan results, filtered on                OPEN ports per IP/Node, and then populates an excel spreadsheet with the findings.  Incorporating Styles Headings and Sheets where required.
+- **nmap2excel.py** - NMAP to excel converter (GNMAP to XLS).  Currently supports GNMAP format. Takes the output of a Greppable NMAP scan results, filtered on                OPEN ports per IP/Node, and then populates an excel spreadsheet with the findings.  Incorporating Styles Headings and Sheets where required.
 - Native Server/Client Python Reverse Shell Implementation
 - A simple TCP Server and associated TCP Client.
 - IP Address To Binary Notation Converter.
@@ -18,7 +18,6 @@ Download available at the following location: [nmap2excel](https://github.com/9l
 ### Usage
 
     nmap2excel.py -i file -o file -t [output input file contents to terminal]
-    nmap2excel.exe -i file -o file -t [outputs input file contents to terminal]
     -i .gnmap format file
     -o filename of your chosen output file (appends .xls)
     -t terminal output
