@@ -13,6 +13,7 @@
 - **ftp2brute.py** - ftp brute forcer. Simple ftp brute force utility.
 - **ascii2hex.py** - ascii string to hex converter.
 - **csrf2html.py** - csrf to html generator.  This allows input of a poc http GET/POST request as input with the resulting output being a poc html payload.
+- **atbash2decrypt** - This script takes an 'atbash cipher' encrypted base64 string, whose output is original clear text
 
 ### Installation - nmap2excel.py
 
@@ -138,3 +139,15 @@ Download available at the following location: [csrf2html](https://github.com/9ly
 ### Example
     
     csrf2html.py poc.txt
+
+### Installation - atbash2decrypt.py
+
+Download available at the following location: [csrf2html](https://github.com/9lyph/Custom-Scripts/blob/master/atbash2decrypt/atbash2decrypt.py)
+
+### Usage
+
+    atbash2decrypt.py '<base64 encrypted text>'
+
+### Example
+
+    atbash2decrypt.py "FTV1MCxdxnJ="
