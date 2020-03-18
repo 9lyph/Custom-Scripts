@@ -1,7 +1,7 @@
 theme: jekyll-theme-tactile
 title: Яandom thingZ
 description: 'Custom Scripts' by ⅁lyph
-url: "https://9lyph.github.io/Custom-Scripts/"
+url: 'https://9lyph.github.io/Custom-Scripts/'
 plugins:
-  - jekyll-sitemap
-  - jekyll-seo-tag
+    - jekyll-sitemap
+    - jekyll-seo-tag
