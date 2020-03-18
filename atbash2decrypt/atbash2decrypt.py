@@ -48,7 +48,7 @@ def Banner():
     print ("+------------------------------------------------------------------------------------------------------------------+")
 
 def Usage():
-    print ("\nUsage: " + sys.argv[0] + "\'<base64 encrypted text>\'" )
+    print ("\nUsage: " + sys.argv[0] + " \'<base64 encrypted text>\'" )
 
 def Main():
     string = list(sys.argv[1])
