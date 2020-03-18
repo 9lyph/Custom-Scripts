@@ -44,7 +44,7 @@ def Banner():
     print ("| Title: atbash2decrypt.py                                                                                         |")
     print ("| Version Control: 1.0 - Draft Concept                                                                             |")
     print ("| Description: This script takes an \'atbash cipher\' encrypted base64 string whose output original clear text.    |")
-    print ("| Usage: " + sys.argv[0] + "\'<base64 encrypted text>\'" + "\t\t                                                   |")
+    print ("| Usage: " + sys.argv[0] + " \'<base64 encrypted text>\'" + "\t\t                                                   |")
     print ("+------------------------------------------------------------------------------------------------------------------+")
 
 def Usage():
