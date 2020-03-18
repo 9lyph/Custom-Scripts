@@ -142,7 +142,7 @@ Download available at the following location: [csrf2html](https://github.com/9ly
 
 ### Installation - atbash2decrypt.py
 
-Download available at the following location: [csrf2html](https://github.com/9lyph/Custom-Scripts/blob/master/atbash2decrypt/atbash2decrypt.py)
+Download available at the following location: [atbash2decrypt](https://github.com/9lyph/Custom-Scripts/blob/master/atbash2decrypt/atbash2decrypt.py)
 
 ### Usage
 
