@@ -64,7 +64,9 @@ def Main():
         else:
             pass
 
-    print ("Decrypted: " + base64.b64decode(''.join(encoded)).decode('utf-8'))
+    print ("[+]----------------------------------")
+    print ("[+] Decrypted: " + base64.b64decode(''.join(encoded)).decode('utf-8'))
+    print ("[+]----------------------------------")
 
 if (__name__ == "__main__"):
     if (len(sys.argv) > 1):
