@@ -1,2 +1,0 @@
-python3-nmap==1.4.1
-simplejson==3.17.0
