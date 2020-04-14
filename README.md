@@ -14,6 +14,7 @@
 - **ascii2hex.py** - ascii string to hex converter.
 - **csrf2html.py** - csrf to html generator.  This allows input of a poc http GET/POST request as input with the resulting output being a poc html payload.
 - **atbash2decrypt** - This script takes an 'atbash cipher' encrypted base64 string, whose output is original clear text
+- **weather.py** - Pulls stats from Open Weather Map
 
 ### Installation - nmap2excel.py
 
@@ -151,3 +152,15 @@ Download available at the following location: [atbash2decrypt](https://github.co
 ### Example
 
     atbash2decrypt.py "FTV1MCxdxnJ="
+
+### Installation - weather.py
+
+Download available at the following location: [weather](https://github.com/9lyph/Custom-Scripts/blob/master/weather/weather.py)
+
+### Usage
+
+    weather.py
+
+### Example
+
+    weather.py
