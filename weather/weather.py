@@ -21,7 +21,7 @@ def main():
                 'X-RapidAPI-Key': '09bb8fd4a7msh36e40cae1db3fb4p11e9b6jsnbdde1dc164f2'
     }
 
-    params = { "q":"sydney,036","units":"metric","lang":"en","id":"Sydney","zip":"2217" }
+    params = { "q":"sydney,036","units":"metric","lang":"en","id":"Sydney" }
 
     r = requests.get(url, headers=headers, params=params)
     json_object = json.loads(r.text)
