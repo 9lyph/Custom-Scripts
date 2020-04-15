@@ -10,9 +10,9 @@ import os
 def banner():
     os.system('clear')
     print("+---------------+")
-    print("| The Weather   |")
+    print("| \'The Weather\' |")
     print("| Author: " + "\u2141" + "lyph |")
-    print("+---------------+\n")
+    print("+---------------+")
 
 def main():
     url = "https://community-open-weather-map.p.rapidapi.com/forecast"
@@ -37,26 +37,22 @@ def main():
     sys     = (dictionary['sys'])      # type dictionary
     dt_txt  = (dictionary['dt_txt'])   # type string
     city    = (json_object['city']['name'])
-    print ("[+]------------------------------------------[+]")
-    print (" | Weather")
-    print (" | -------")
-    print (" |")
-    print (f" | City:\t{city}")
-    print (" | ")
-    print ("[+]------------------------------------------[+]")
-    print (" | ")
-    print (" | Details")
-    print (" | -------")
-    print (" |")
+    print ("+---------------+")
+    print (f"| City: {city}\t|" )
+    print ("+---------------+")
+    print ("+------------------------------------+")
+    print ("|\t\t\t\t     |")
+    print ("| Details\t\t\t     |")
+    print ("|\t\t\t\t     |")
 
     for k,v in main.items():
-        print (f" | {k}: \t{v}")
+        print (f"| {k}: \t{v}\t\t     |")
 
     for i in weather:
-        print (f" | Description:\t{i['main']}")
-        print (f" |\t\t{i['description']}")
-        print (" |")
-        print ("[+]------------------------------------------[+]")
+        print (f"| Description:\t{i['main']}\t\t     |")
+        print (f"|\t\t{i['description']}     |")
+        print ("|\t\t\t\t     |")
+        print ("+------------------------------------+")
 
 if (__name__ == '__main__'):
     banner()
