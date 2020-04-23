@@ -51,8 +51,6 @@ def toHex(text):
     print ("\n[+] Hex Output: ", end='', flush=True)
     [print (hexies[2:], end=' ', sep='', flush=True) for hexies in hexa]
 
-
-
 def Main():
     text = sys.argv[2]
     try:
