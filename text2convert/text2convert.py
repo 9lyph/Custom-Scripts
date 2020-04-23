@@ -42,6 +42,18 @@ def toBinary(text):
     for binaries in binary:
         if binaries == '0b100000':
             print ("00" + binaries[2:], end=' ', sep='', flush=True)
+        elif binaries == '0b101101':
+            print ("00" + binaries[2:], end=' ', sep='', flush=True)
+        elif binaries == '0b111010':
+            print ("00" + binaries[2:], end=' ', sep='', flush=True)
+        elif binaries == '0b101111':
+            print ("00" + binaries[2:], end=' ', sep='', flush=True)
+        elif binaries == '0b101110':
+            print ("00" + binaries[2:], end=' ', sep='', flush=True)
+        elif binaries == '0b111001':
+            print ("00" + binaries[2:], end=' ', sep='', flush=True)
+        elif binaries == '0b110010':
+            print ("00" + binaries[2:], end=' ', sep='', flush=True)
         else:
             print ("0" + binaries[2:], end=' ', sep='', flush=True)
 
