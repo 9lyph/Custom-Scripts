@@ -40,7 +40,29 @@ def toBinary(text):
     [binary.append(bin(ord(i))) for i in text]
     print("\n[+] Binary Output: ", end='', flush=True)
     for binaries in binary:
-        if binaries == '0b100000':
+        if binaries == '0b100101':
+            print ("00" + binaries[2:], end=' ', sep='', flush=True)
+        elif binaries == '0b101100':
+            print ("00" + binaries[2:], end=' ', sep='', flush=True)
+        elif binaries == '0b111100':
+            print ("00" + binaries[2:], end=' ', sep='', flush=True)
+        elif binaries == '0b111110':
+            print ("00" + binaries[2:], end=' ', sep='', flush=True)
+        elif binaries == '0b111111':
+            print ("00" + binaries[2:], end=' ', sep='', flush=True)
+        elif binaries == '0b111101':
+            print ("00" + binaries[2:], end=' ', sep='', flush=True)
+        elif binaries == '0b101011':
+            print ("00" + binaries[2:], end=' ', sep='', flush=True)
+        elif binaries == '0b101001':
+            print ("00" + binaries[2:], end=' ', sep='', flush=True)
+        elif binaries == '0b101000':
+            print ("00" + binaries[2:], end=' ', sep='', flush=True)
+        elif binaries == '0b101010':
+            print ("00" + binaries[2:], end=' ', sep='', flush=True)
+        elif binaries == '0b100110':
+            print ("00" + binaries[2:], end=' ', sep='', flush=True)
+        elif binaries == '0b100000':
             print ("00" + binaries[2:], end=' ', sep='', flush=True)
         elif binaries == '0b101101':
             print ("00" + binaries[2:], end=' ', sep='', flush=True)
