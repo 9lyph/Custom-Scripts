@@ -15,7 +15,7 @@
 - **csrf2html.py** - csrf to html generator.  This allows input of a poc http GET/POST request as input with the resulting output being a poc html payload.
 - **atbash2decrypt** - This script takes an 'atbash cipher' encrypted base64 string, whose output is original clear text
 - **weather.py** - Pulls stats from Open Weather Map
-- **text2convert.py** - Converts plaintext input to Dec, Octal and/or Binary output
+- **text2convert.py** - Converts plaintext input to Dec, Octal, Binary, Hex output
 
 ### Installation - nmap2excel.py
 
@@ -179,3 +179,4 @@ Download available at the following location: [text2convert](https://github.com/
     Example 1: [+] text2convert.py -d "string to convert"
     Example 2: [+] text2convert.py -do "string to convert"
     Example 3: [+] text2convert.py -dob "string to convert"
+    Example 4: [+] text2convert.py -dobx "string to convert"
