@@ -16,10 +16,11 @@ def Usage():
     os.system('clear')
     print ("+------------------------------------------------------------------------------------------+")
     print ("| Takes a plaintext input and converts it according to the options specified as arguments. |")
-    print (f"| {sys.argv[0]} -dob <plaintext to convert>\t\t\t\t\t\t   |")
+    print (f"| {sys.argv[0]} -[dob] <plaintext to convert>\t\t\t\t\t\t   |")
     print (f"| Example 1: [+] {sys.argv[0]} -d \"string to convert\"\t\t\t\t\t   |")
     print (f"| Example 2: [+] {sys.argv[0]} -do \"string to convert\"\t\t\t\t   |")
     print (f"| Example 3: [+] {sys.argv[0]} -dob \"string to convert\"\t\t\t\t   |")
+    print (f"| Example 4: [+] {sys.argv[0]} -dobx \"string to convert\"\t\t\t\t   |")
     print ("+------------------------------------------------------------------------------------------+")
 
 def toDecimal(text):
@@ -44,10 +45,18 @@ def toBinary(text):
         else:
             print ("0" + binaries[2:], end=' ', sep='', flush=True)
 
+def toHex(text):
+    hexa = []
+    [hexa.append(hex(ord(i))) for i in text]
+    print ("\n[+] Hex Output: ", end='', flush=True)
+    [print (hexies[2:], end=' ', sep='', flush=True) for hexies in hexa]
+
+
+
 def Main():
     text = sys.argv[2]
     try:
-        opts, args = getopt.gnu_getopt(sys.argv,"hdob",["decimal=","octal=","binary="])
+        opts, args = getopt.gnu_getopt(sys.argv,"hdobx",["decimal=","octal=","binary=","hex="])
         for opt, arg in opts:
             if opt == "-h":
                 Usage()
@@ -58,6 +67,8 @@ def Main():
                 toOctal(text)
             elif opt in ("-b", "--binary"):
                 toBinary(text)
+            elif opt in ("-x", "--hex"):
+                toHex(text)
             else:
                 Usage()
                 sys.exit()
