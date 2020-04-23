@@ -179,5 +179,3 @@ Download available at the following location: [text2convert](https://github.com/
     Example 1: [+] text2convert.py -d "string to convert"
     Example 2: [+] text2convert.py -do "string to convert"
     Example 3: [+] text2convert.py -dob "string to convert"
-
-    weather.py
