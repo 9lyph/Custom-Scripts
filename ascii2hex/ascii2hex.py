@@ -38,11 +38,20 @@ def asciiPrint(string):
     print ("\n")
 
 def hexPrint(string):
+    hexarray = []
+    split = []
     if string[0:2] == "\\x":
         split = string.split("\\x")
     elif string[2] == " ":
         split = string.split(" ")
-    hexarray = []
+    else:
+        i = 0
+        string_spaced = ''
+        for char in string:
+            string_spaced += string[i:i+2] + " "
+            i += 1
+        split = string.split(" ")
+            
     for char in split:
         if char == '':
             pass
