@@ -15,7 +15,7 @@ def Banner():
     print ("+==================================================================================================================================================")
     print ("|")
     print ("| Title: %s" % sys.argv[0])
-    print ("| Author: ⅁lyph")
+    print ("| Author: glyph")
     print ("| Creation Date: 21/02/2020")
     print (f"| Usage: {sys.argv[0]} '-x' \'<hex to convert to ascii>\' OR {sys.argv[0]} -a' \'<ascii to convert to hex>\'")
     print ("| Description: This takes either a ASCII string or HEX Value set, with the opposite result as output.")
@@ -38,7 +38,10 @@ def asciiPrint(string):
     print ("\n")
 
 def hexPrint(string):
-    split = string.split("\\x")
+    if string[0:2] == "\\x":
+        split = string.split("\\x")
+    elif string[2] == " ":
+        split = string.split(" ")
     hexarray = []
     for char in split:
         if char == '':
