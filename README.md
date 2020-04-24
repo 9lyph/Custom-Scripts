@@ -172,7 +172,7 @@ Download available at the following location: [text2convert](https://github.com/
 
 ### Usage
 
-    text2convert.py -[dob] "<string to convert>"
+    text2convert.py -[dobx] "<string to convert>"
 
 ### Example
 
