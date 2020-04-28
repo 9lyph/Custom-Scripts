@@ -42,7 +42,7 @@ def hexPrint(string):
     split = []
     if string[0:2] == "\\x":
         split = string.split("\\x")
-    elif string[2] == " ":
+    elif string[1] == " ":
         split = string.split(" ")
     else:
         i = 0
@@ -62,7 +62,7 @@ def hexPrint(string):
     print ("[Original Hex]\n\n\'%s\'" % string)
     print ("\n[Ascii Conversion]\n")
     for i in hexarray:
-        print (i.decode('utf-8'), end='')
+        print (i.decode('latin-1'), end='')
     print ("\n")
 
 if __name__ == "__main__":
