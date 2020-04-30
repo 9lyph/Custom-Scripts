@@ -3,9 +3,6 @@ import sys
 import os.path
 import ipaddress
 import platform
-import argparse
-
-
 
 def Banner():
     os.system('clear')
