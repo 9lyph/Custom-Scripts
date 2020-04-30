@@ -18,9 +18,9 @@ def Usage():
     print ("+-------------------------------------------------------+")
     print ("| Ping sweep with given input of 'IPAddress/CIDR'       |")
     print ("|\t\t\t\t\t\t\t|")
-    print (f"| {sys.argv[0]} <IPAddress/CIDR>\t\t        |")
+    print (f"| {sys.argv[0]} <IPAddress/CIDR> [-o] \'outputfile.txt\' \t|")
     print ("|\t\t\t\t\t\t\t|")
-    print(f"| Example: {sys.argv[0]} 192.168.1.0/29\t\t\t|")
+    print(f"| Example: {sys.argv[0]} 192.168.1.0/29 -o sweep.txt \t|")
     print ("+-------------------------------------------------------+")
 
 def cleanUp():
@@ -62,12 +62,13 @@ if __name__ == '__main__':
     Banner()
     if len(sys.argv) < 2:
         Usage() 
-    try:
-        if (str(sys.argv[2][1:2]) == 'o'.lower()):
-            outfile = (str(sys.argv[3]).split('.'))
-            outfile = (outfile[0] + '.txt')
-    except:
-        pass
+    else:
+        try:
+            if (str(sys.argv[2][1:2]) == 'o'.lower()):
+                outfile = (str(sys.argv[3]).split('.'))
+                outfile = (outfile[0] + '.txt')
+        except:
+            pass
 
-    Main(sys.argv[1:])
-    cleanUp()
+        Main(sys.argv[1:])
+        cleanUp()
