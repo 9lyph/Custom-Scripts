@@ -3,6 +3,9 @@ import sys
 import os.path
 import ipaddress
 import platform
+import argparse
+
+
 
 def Banner():
     os.system('clear')
@@ -26,7 +29,7 @@ def cleanUp():
     else:
         sys.exit()
 
-def Main(argv):
+def Main(argv, ofile):
     ip_address = str(argv[0])
     raw_ip_address = str(argv[0][:-3])
     mask = ip_address.split('/')[1]
@@ -39,7 +42,7 @@ def Main(argv):
                 elif (platform.system() == 'Linux'):
                     result = os.system("ping -c 1 -w 100 " + str(addr) + " 1>/dev/null")
                 if result == 512:
-                    f.write(F"[-] Host: {str(addr)} unreachable\n")
+                    f.write(f"[-] Host: {str(addr)} unreachable\n")
                 else:
                     f.write(f"[+] Host: {str(addr)} reachable\n")
         except ValueError as err:
@@ -48,14 +51,24 @@ def Main(argv):
     with  open ("sweep.txt", "r") as f:     
         for line in f.readlines():
             print (line, end='', flush=True)
+    
+    if (ofile != ''):
+        print (f"[+] Writing to file: {outfile}")
+        os.system('cp sweep.txt ' + outfile)
 
 if __name__ == '__main__':
+
     Banner()
     if len(sys.argv) < 2:
-        Usage()
-    else:
-        Main(sys.argv[1:])
-        cleanUp()
+        Usage() 
+    try:
+        if (str(sys.argv[2][1:2]) == 'o'.lower()):
+            outfile = (str(sys.argv[3]).split('.'))
+            outfile = (outfile[0] + '.txt')
+    except:
+        pass
 
+    Main(sys.argv[1:], outfile)
+    cleanUp()
 
 
