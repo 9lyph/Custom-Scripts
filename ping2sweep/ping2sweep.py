@@ -4,6 +4,9 @@ import os.path
 import ipaddress
 import platform
 
+global outfile
+outfile = ''
+
 def Banner():
     os.system('clear')
     print("+-------------------+")
@@ -26,7 +29,8 @@ def cleanUp():
     else:
         sys.exit()
 
-def Main(argv, ofile):
+def Main(argv):
+
     ip_address = str(argv[0])
     raw_ip_address = str(argv[0][:-3])
     mask = ip_address.split('/')[1]
@@ -49,7 +53,7 @@ def Main(argv, ofile):
         for line in f.readlines():
             print (line, end='', flush=True)
     
-    if (ofile != ''):
+    if (outfile != ''):
         print (f"[+] Writing to file: {outfile}")
         os.system('cp sweep.txt ' + outfile)
 
@@ -65,7 +69,5 @@ if __name__ == '__main__':
     except:
         pass
 
-    Main(sys.argv[1:], outfile)
+    Main(sys.argv[1:])
     cleanUp()
-
-
