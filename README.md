@@ -188,11 +188,11 @@ Download available at the following location: [ping2sweep](https://github.com/9l
 
 ### Usage
 
-    ping2sweep.py <IPAddress Range>
+    ping2sweep <IPAddress Range> [-o] <optional output file> 
 
 ### Example
 
-    ping2sweep 192.168.1.0/24
+    ping2sweep 192.168.1.0/24 -o sweep.txt
 
 ### Output Format
 
