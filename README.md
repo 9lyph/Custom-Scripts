@@ -16,6 +16,7 @@
 - **atbash2decrypt** - This script takes an 'atbash cipher' encrypted base64 string, whose output is original clear text
 - **weather.py** - Pulls stats from Open Weather Map
 - **text2convert.py** - Converts plaintext input to Dec, Octal, Binary, Hex output
+- **ping2sweep.py** - Performs a PING sweep given an IP Range
 
 ### Installation - nmap2excel.py
 
@@ -180,3 +181,27 @@ Download available at the following location: [text2convert](https://github.com/
     Example 2: [+] text2convert.py -do "string to convert"
     Example 3: [+] text2convert.py -dob "string to convert"
     Example 4: [+] text2convert.py -dobx "string to convert"
+    
+### Installation - ping2sweep.py
+
+Download available at the following location: [ping2sweep](https://github.com/9lyph/Custom-Scripts/tree/master/ping2sweep/ping2sweep.py)
+
+### Usage
+
+    ping2sweep <IPAddress Range> [-o] <optional output file> 
+
+### Example
+
+    ping2sweep 192.168.1.0/24 -o sweep.txt
+
+### Output Format
+
+```
+    +-------------------+
+    | 'ping2sweep.py'   |
+    | Author: ⅁lyph     |
+    +-------------------+
+    [+] Sweeping host(s) 192.168.1.0/24 ...
+    [-] Host: 192.168.1.0 unreachable
+    [+] Host: 192.168.1.1 reachable
+```
