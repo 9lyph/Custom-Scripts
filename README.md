@@ -17,6 +17,7 @@
 - **weather.py** - Pulls stats from Open Weather Map
 - **text2convert.py** - Converts plaintext input to Dec, Octal, Binary, Hex output
 - **ping2sweep.py** - Performs a PING sweep given an IP Range
+- **crackitycrack.sh** - Bash Shell MD5 cracker
 
 ### Installation - nmap2excel.py
 
@@ -205,3 +206,23 @@ Download available at the following location: [ping2sweep](https://github.com/9l
     [-] Host: 192.168.1.0 unreachable
     [+] Host: 192.168.1.1 reachable
 ```
+
+### Installation - crackitycrack.sh
+
+Download shell script and run accordingly
+
+### Usage
+    
+    crackitycrack.sh <hash> <wordlist>
+
+### Example
+
+    ./crackitycrack.sh 26323c16d5f4dabff3bb136f2460a943 wordlist.txt
+
+### Output Format
+
+    Trying:  qazwsx
+    +
+    | Cracked Hash:  26323c16d5f4dabff3bb136f2460a943
+    | Cleartext   :  onceuponatime
+    +
