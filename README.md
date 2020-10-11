@@ -4,7 +4,7 @@
 
 ### This repo contains various scripts including:
 
-- **nmap2excel.py** - namp to excel converter (gnmap to .xls).  Currently supports **gnmap** format. Takes the output of a Greppable NMAP scan results, filtered on                OPEN ports per IP/Node, and then populates an excel spreadsheet with the findings.  Incorporating Styles Headings and Sheets where required.
+- **nmap2excel.py** - nmap to excel converter (gnmap to .xls).  Currently supports **gnmap** format. Takes the output of a Greppable NMAP scan results, filtered on                OPEN ports per IP/Node, and then populates an excel spreadsheet with the findings.  Incorporating Styles Headings and Sheets where required.
 - **SimpleServer.py/SimpleClient.py** - simple TCP Server and associated TCP Client.
 - **server2shell.py/client2shell.py** - native server/client python reverse shell implementation
 - **ip2binary.py** - ip address to binary notation converter.
