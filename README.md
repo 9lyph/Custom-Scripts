@@ -259,10 +259,9 @@ Just run the script
     
 ### Installation - raw2hex.py
 
-Just run the script
+Download available at the following location: [raw2hex](https://github.com/9lyph/Custom-Scripts/tree/master/raw2hex/raw2hex.py)
 
-
-### Example
+### Usage
  
     ./raw2hex.py aabbcc
 
