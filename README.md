@@ -19,6 +19,7 @@
 - **ping2sweep.py** - Performs a PING sweep given an IP Range
 - **crackitycrack.sh** - Bash Shell MD5 cracker
 - **hexBytes** - Produces a list of all hex characters, in hex format
+- **raw2hex** - Takes raw hex e.g. aabbcc and outputs in curated format e.g. \xaa\xbb\xcc
 
 ### Installation - nmap2excel.py
 
@@ -255,4 +256,16 @@ Just run the script
     ("\xd0\xd1\xd2\xd3\xd4\xd5\xd6\xd7\xd8\xd9\xda\xdb\xdc\xdd\xde\xdf")
     ("\xe0\xe1\xe2\xe3\xe4\xe5\xe6\xe7\xe8\xe9\xea\xeb\xec\xed\xee\xef")
     ("\xf0\xf1\xf2\xf3\xf4\xf5\xf6\xf7\xf8\xf9\xfa\xfb\xfc\xfd\xfe\xff")
+    
+### Installation - raw2hex.py
 
+Just run the script
+
+
+### Example
+ 
+    ./raw2hex.py aabbcc
+
+### Output Format
+
+    [+] Converted: \xaa\xbb\xcc
