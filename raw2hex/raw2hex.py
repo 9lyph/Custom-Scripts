@@ -20,7 +20,7 @@ def main():
         try:
             print ("\\x" + hex[x].lower()+hex[x+1].lower(), flush=True, end='')
             # sys.stdout.flush()
-            x+=1
+            x+=2
         except IndexError:
             pass
 
