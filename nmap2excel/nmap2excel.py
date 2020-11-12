@@ -1,4 +1,4 @@
-#!c:\Python27\python.exe
+#!/bin/usr/env python
 # -*- coding: UTF-8 -*-
 
 '''
@@ -44,7 +44,7 @@ def initialiseVariables():
 	message="......"
 
 def banner():
-	os.system('cls')
+	os.system('clear')
 	print (" _   _ __  __          _____ ___  ________   _______ ______ _      ")
 	print ("| \ | |  \/  |   /\   |  __ \__ \|  ____\ \ / / ____|  ____| |     ")
 	print ("|  \| | \  / |  /  \  | |__) | ) | |__   \ V / |    | |__  | |     ")
