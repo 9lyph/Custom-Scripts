@@ -269,4 +269,5 @@ Download available at the following location: [raw2hex](https://github.com/9lyph
 
     [+] Converted: \xaa\xbb\xcc
 
-#### Follow me on - [Twitter](https://twitter.com/9lyph) [Linkedin](https://www.linkedin.com/in/victor-h-a894a84/) [Youtube](https://www.youtube.com/channel/UC79Q2b0tHeqsjjvEH0k7jZw)
+#### Follow me on
+[Twitter](https://twitter.com/9lyph) [Linkedin](https://www.linkedin.com/in/victor-h-a894a84/) [Youtube](https://www.youtube.com/channel/UC79Q2b0tHeqsjjvEH0k7jZw)
