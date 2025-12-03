@@ -20,6 +20,7 @@
 - **crackitycrack.sh** - Bash Shell MD5 cracker
 - **hexBytes** - Produces a list of all hex characters, in hex format
 - **raw2hex** - Takes raw hex e.g. aabbcc and outputs in curated format e.g. \xaa\xbb\xcc
+- **scraper.py** - Basic Web Site Crawler and scraper of information
 
 ### Installation - nmap2excel.py
 
