@@ -270,5 +270,69 @@ Download available at the following location: [raw2hex](https://github.com/9lyph
 
     [+] Converted: \xaa\xbb\xcc
 
+### Installation - scraper.py
+
+Requires BeautifulSoup Module
+
+Download available at the following location: [scraper](https://github.com/9lyph/Custom-Scripts/tree/master/scraper/scraper.py)
+
+### Usage
+ 
+    ./scraper.py [-h] [--delay DELAY] [--max-pages MAX_PAGES] url
+
+### Output Format
+
+    [INFO: Scraping: https://exploitsecurity.io
+
+    ============================================================
+    SCRAPING RESULTS FOR: https://exploitsecurity.io
+    ============================================================
+    Company Name: Exploit Security
+    
+    Emails Found (15):
+       • 18d2f96d279149989b95faf0a4b41882@sentry-next.wixpress.com
+       • 2062d0a4929b45348643784b5cb39c36@sentry.wixpress.com
+       • 271e9fa3230b4eec94b02bf95780f5f2@sentry.wixpress.com
+       • 460ff4620fa44cba8df530afde949785@sentry.wixpress.com
+       • 5d1795a2db124a268f1e1bd88f503500@sentry.wixpress.com
+       • 605a7baede844d278b89dc95ae0a9123@sentry-next.wixpress.com
+       • 78f7996315bc402f9dcb8a2f974b82d1@sentry.wixpress.com
+       • 8c4075d5481d476e945486754f783364@sentry.io
+       • 98b21aa53d68482b8414e892d9af0e5f@sentry-next.wixpress.com
+       • 9a65e97ebe8141fca0c4fd686f70996b@sentry.wixpress.com
+       • bfb679c754744c58a7374ee6e25cfc13@sentry.wixpress.com
+       • c183baa23371454f99f417f6616b724d@sentry.wixpress.com
+       • dd0a55ccb8124b9c9d938e3acf41f8aa@sentry.wixpress.com
+       • ed436f5053144538958ad06a5005e99a@sentry.wixpress.com
+       • info@exploitsecurity.io
+    
+    Phone Numbers (2):
+       • 1800 252 919
+       • 670304435
+    
+    Social Media:
+       • Linkedin: exploitsecurityio
+       • Twitter: bt
+       • Twitter: 3xploit5ecurit7
+       • Twitter: suricate
+       • Twitter: bolt
+    
+    Possible Addresses:
+       • Damn Vulnerable Raspberry Pi
+       • Our Security Research Services are highly sought after and comprise of deep diving into hardware and applications
+       • Our expert team is committed to providing you with the most thorough, proactive, and effective penetration testing solutions. We ensure that your systems remain resilient to emerging threats, empowering you to mitigate risks and achieve robust security compliance.
+       • Each of these services is performed by our highly skilled and certified penetration testers, who employ the latest tools, methodologies, and industry best practices to uncover hidden threats. By partnering with us, you gain actionable insights that not only enhance the security of your digital and physical infrastructure but also safeguard your organization's reputation, assets, and operations.
+       • Exploit Security was established to offer security consultancy through a connected group of white hat freelancers.  Based in Sydney, Australia, our team of passionate white hat security researchers are dedicated to the breaking of our clients target systems so that black hats don't get the chance to. Security research is at the heart of our business and with a specialty for embedded systems and IoT we endeavour to use this expertise to help our clients fortify their systems before being made a target of compromise themselves.
+       • directly targeted to tease out vulnerabilities from.
+       • Don't have a penetration testing practise ? We can help by taking on that function for you. Using our skilled team of Penetration Testers and Security Researchers, we are able to take on the task with agility and professionalism.
+       • Our Penetration Testing Sydney services provide organizations with unparalleled visibility into their security posture, enabling proactive identification and remediation of vulnerabilities before they can be exploited. Through rigorous and detailed testing of critical systems, we empower our clients to strengthen their defenses against evolving cyber threats.
+       • challenges that include concepts found within Hardware Hacking, Embedded Systems and IoT.
+    
+    Pages crawled: 1
+    ============================================================
+    
+    Emails saved to scraped_emails.txt
+
+
 #### Follow me on
 [Mastodon](https://defcon.social/@9lyph) [Linkedin](https://www.linkedin.com/in/victor-h-a894a84/) [Youtube](https://www.youtube.com/channel/UC79Q2b0tHeqsjjvEH0k7jZw)
