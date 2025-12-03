@@ -1,6 +1,22 @@
 #!/usr/bin/env python3
-"""
-"""
+'''
+Author: ⅁lyph
+Title: scraper.py
+Creation Date: 04/12/2025
+Version Control: 1.0
+Description: Basic Website scraper.
+
+Script Usage
+============
+
+Usage: scraper.py [-h] [--delay DELAY] [--max-pages MAX_PAGES] url
+
+url URL to crawl
+Options:
+-h HELP
+--delay Delay Between Requests
+--max-pages Maximum Pages to Crawl
+'''
 
 import re
 import time
